@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -217,6 +219,7 @@ section.hero {
         display: flex;
         align-items: center;
         justify-content: center;
+        font-family: mv boli, "Carattere";
         //   margin-top: 90em;
         //  margin-bottom: 30px;
         //  color: #6086b5;
@@ -224,7 +227,6 @@ section.hero {
         span {
           color: #6086b5;
           margin-left: 15px;
-          font-family: "mv boli";
 
           &::after {
             content: "";
@@ -356,8 +358,13 @@ section.reviews {
 
       span {
         color: #6086b5;
+
         margin-left: 15px;
-        font-family: mv boli;
+        font-family: mv boli, Carattere;
+
+        font-weight: 700;
+
+        //   font-family: roboto;
 
         &::after {
           content: "";
@@ -366,6 +373,7 @@ section.reviews {
           height: 2px;
           bottom: 15px;
           background: #6086b5;
+          background: #000;
           display: block;
         }
       }
@@ -373,11 +381,11 @@ section.reviews {
 
     p {
       text-align: center;
-      font-size: 23px;
+      font-size: 25px;
 
       span {
         color: #6086b5;
-        font-family: mv boli;
+        font-family: mv boli, "Carattere";
       }
     }
   }

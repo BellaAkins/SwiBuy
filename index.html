@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwiBuy</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/pages/products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="hero-img"></div>
+    <div class="container">
+      <header>
+        <a href="#" class="logo">
+          <img src="images/cart-check-svgrepo-com (1).svg" alt="" /> Swi<span
+            >Buy</span
+          ></a
+        >
+        <nav>
+          <svg
+            class="close"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2V2ZM14.71 13.29C14.8037 13.383 14.8781 13.4936 14.9289 13.6154C14.9797 13.7373 15.0058 13.868 15.0058 14C15.0058 14.132 14.9797 14.2627 14.9289 14.3846C14.8781 14.5064 14.8037 14.617 14.71 14.71C14.617 14.8037 14.5064 14.8781 14.3846 14.9289C14.2627 14.9797 14.132 15.0058 14 15.0058C13.868 15.0058 13.7373 14.9797 13.6154 14.9289C13.4936 14.8781 13.383 14.8037 13.29 14.71L12 13.41L10.71 14.71C10.617 14.8037 10.5064 14.8781 10.3846 14.9289C10.2627 14.9797 10.132 15.0058 10 15.0058C9.86799 15.0058 9.73729 14.9797 9.61543 14.9289C9.49357 14.8781 9.38297 14.8037 9.29 14.71C9.19628 14.617 9.12188 14.5064 9.07111 14.3846C9.02034 14.2627 8.99421 14.132 8.99421 14C8.99421 13.868 9.02034 13.7373 9.07111 13.6154C9.12188 13.4936 9.19628 13.383 9.29 13.29L10.59 12L9.29 10.71C9.1017 10.5217 8.99591 10.2663 8.99591 10C8.99591 9.7337 9.1017 9.4783 9.29 9.29C9.47831 9.1017 9.7337 8.99591 10 8.99591C10.2663 8.99591 10.5217 9.1017 10.71 9.29L12 10.59L13.29 9.29C13.4783 9.1017 13.7337 8.99591 14 8.99591C14.2663 8.99591 14.5217 9.1017 14.71 9.29C14.8983 9.4783 15.0041 9.7337 15.0041 10C15.0041 10.2663 14.8983 10.5217 14.71 10.71L13.41 12L14.71 13.29Z"
+              fill="black"
+            />
+          </svg>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#whyus">WhyUs</a></li>
+            <li><a href="#shopnow">Shop</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </nav>
+
+        <div class="cart-icon-box">
+          <a class="cart-link" href="checkout.html">
+            <img class="cart-icon" src="images/black cart icon.png" />
+            <div class="cart-quantity js-cart-quantity">2</div>
+          </a>
+          <a href="form.html">
+            <img
+              class="profile-icon"
+              src="images/profile-circle.svg"
+              alt="profile"
+          /></a>
+        </div>
+
+        <svg
+          class="menu"
+          viewBox="0 0 48 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z"
+            fill="black"
+          />
+        </svg>
+      </header>
+      <section class="hero">
+        <!-- <h1>Matching style and class with luxury and <span>comfort.</span></h1>-->
+        <h1>
+          Where <span>Quick</span> Meets Quality - Your Fast-track to Swift
+          Shopping
+        </h1>
+
+        <p class="subhead">
+          Discover the ultimate shopping destination for fast, effortless
+          fashion delivered right to your door.Swibuy redefines online shopping
+          by offering a fast, intuitive and stylish journey to your perfect look
+        </p>
+
+        <a href="./checkout.html" class="cta">Get Started</a>
+
+        <svg
+          class="down-arrow"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21 5L19 12H7.37671M20 16H8L6 3H3M11 6L13 8L17 4M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+            stroke="#6086b5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-container">
+          <div class="about-image">
+            <img src="images/happy shopper.webp" <div class="about-details" />
+          </div>
+          <div class="about-details">
+            <h3>About SwiBuy</h3>
+            <h1>Shop Smart, Buy Swiftly</h1>
+            <p>
+              SwiBuy is the ultimate platform for fast, effortless shopping. We
+              combine speed and style delivering a seamless shopping experience
+              with a diverse range of fashionable clothing designed to keep you
+              looking sharp and confident everyday
+            </p>
+
+            <a href="#" class="cta">Shop Now</a>
+          </div>
+        </div>
+      </section>
+      <section class="why" id="whyus">
+        <div class="why-container">
+          <div class="text-container">
+            <h1>Why<span>Us</span></h1>
+            <p>This is why you should choose SwiBuy</p>
+          </div>
+
+          <div class="why-boxes">
+            <div class="first">
+              <h5>
+                <img src="images/verified-svgrepo-com (1).svg" alt="original" />
+              </h5>
+              <h3>Original Products</h3>
+              <p>
+                We provide money back guarantee if the product are not original
+              </p>
+            </div>
+            <div class="first">
+              <h5>
+                <img src="images/smile-svgrepo-com (1).svg" alt="smile" />
+              </h5>
+              <h3>Satisfaction Guarantee</h3>
+              <p>
+                Exchange the product you've purchased if it doesn't fit on you
+              </p>
+            </div>
+            <div class="first">
+              <h5>
+                <img
+                  src="images/cart-check-svgrepo-com (1).svg"
+                  alt="arrival"
+                />
+              </h5>
+              <h3>New Arrival Everyday</h3>
+              <p>We update our collections almost everyday</p>
+            </div>
+            <div class="first">
+              <h5>
+                <img
+                  src="images/fast-delivery1-svgrepo-com (1).svg"
+                  alt="fast"
+                />
+              </h5>
+              <h3>Fast & Free Shipping</h3>
+              <p>We offer fast and free shipping for our loyal customers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shopnow" id="shopnow">
+        <div class="products-grid">
+          <div class="product-container">
+            <div class="product-image-container">
+              <img
+                class="product-image"
+                src="images/products/men-chino-pants-beige.jpg"
+              />
+            </div>
+
+            <div class="product-name limit-text-to-2-lines">
+              Men's Classic-fit Pleated Chino Pants
+            </div>
+
+            <div class="product-rating-container">
+              <img
+                class="product-rating-stars"
+                src="images/ratings/rating-45.png"
+              />
+              <div class="product-rating-count link-primary">87</div>
+            </div>
+
+            <div class="product-price">$10.90</div>
+
+            <div class="product-quantity-container">
+              <select>
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+
+            <div class="product-spacer"></div>
+
+            <div class="added-to-cart">
+              <img src="images/icons/checkmark.png" />
+              Added
+            </div>
+
+            <button class="add-to-cart-button button-primary">
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="product-container">
+            <div class="product-image-container">
+              <img
+                class="product-image"
+                src="images/products/women-chiffon-beachwear-coverup-black.jpg"
+              />
+            </div>
+
+            <div class="product-name limit-text-to-2-lines">
+              Women's Chiffon Beachwear Cover Up - Black
+            </div>
+
+            <div class="product-rating-container">
+              <img
+                class="product-rating-stars"
+                src="images/ratings/rating-40.png"
+              />
+              <div class="product-rating-count link-primary">127</div>
+            </div>
+
+            <div class="product-price">$20.95</div>
+
+            <div class="product-quantity-container">
+              <select>
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+
+            <div class="product-spacer"></div>
+
+            <div class="added-to-cart">
+              <img src="images/icons/checkmark.png" />
+              Added
+            </div>
+
+            <button class="add-to-cart-button button-primary">
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="product-container">
+            <div class="product-image-container">
+              <img
+                class="product-image"
+                src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg"
+              />
+            </div>
+
+            <div class="product-name limit-text-to-2-lines">
+              Adults Plain Cotton T-Shirt - 2 Pack
+            </div>
+
+            <div class="product-rating-container">
+              <img
+                class="product-rating-stars"
+                src="images/ratings/rating-45.png"
+              />
+              <div class="product-rating-count link-primary">56</div>
+            </div>
+
+            <div class="product-price">$7.99</div>
+
+            <div class="product-quantity-container">
+              <select>
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+
+            <div class="product-spacer"></div>
+
+            <div class="added-to-cart">
+              <img src="images/icons/checkmark.png" />
+              Added
+            </div>
+
+            <button class="add-to-cart-button button-primary">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="reviews-text">
+          <h1><span>Reviews</span></h1>
+          <p>
+            Over 1,000 satisfied customers with 5-star reviews <br />
+            <span>Here is what some of our customers have to say</span>
+          </p>
+        </div>
+
+        <div class="reviews-box">
+          <div class="reviews-profile">
+            <img src="images/testimonial avatar 1.jpg" alt="" />
+
+            <div class="reviews-info">
+              <h2 class="name">SaraBella</h2>
+              <p class="bio">
+                I love how effortless shopping on SwiBuy is. It's my go-to for
+                trendy outfits, and they always deliver on time
+              </p>
+              <div class="reviews-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-profile">
+            <img src="images/Debbie.jpg" alt="" />
+
+            <div class="reviews-info">
+              <h2 class="name">Debbie</h2>
+              <p class="bio">Their Customer service is top notch!</p>
+              <div class="reviews-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-profile">
+            <img src="images/tee.jpg" alt="" />
+
+            <div class="reviews-info">
+              <h2 class="name">Tee</h2>
+              <p class="bio">
+                From browsing to checkout, the entire process is so smooth.
+                SwiBuy makes online shopping effortless
+              </p>
+              <div class="reviews-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-profile">
+            <img src="images/zee.jpg" alt="" />
+
+            <div class="reviews-info">
+              <h2 class="name">Zee</h2>
+              <p class="bio">
+                SwiBuy's quick service and great selection saves me so much time
+              </p>
+              <div class="reviews-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter" id="newsletterr">
+        <div class="newsletter-text">
+          <h2>
+            Subscribe to our newsletter to get updates to our latest collections
+          </h2>
+          <p>
+            Get 10% off on your first order by subscribing to our newsletter
+          </p>
+        </div>
+        <form action="#">
+          <input type="email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </form>
+        <div class="policy">
+          <p>
+            You will be able to unsubscribe at any time <br />
+            Read our Policy <a href="#">here</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+
+  <footer>
+    <div class="footer-box">
+      <div class="footer-col">
+        <div class="logo-image">
+          <a href="#" class="logo">
+            <img src="images/cart-check-svgrepo-com (1).svg" alt="" /> Swi<span
+              >Buy</span
+            ></a
+          >
+        </div>
+        <p>
+          Specializes in providing high-quality stylish products for your
+          wardrobe
+        </p>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><a class="bold" href="#">Privacy Policy</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Quality Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">DPA</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><a class="bold" href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Message Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="follow-us bold">Follow us</p>
+        <ul>
+          <div class="footer-icons">
+            <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <li>
+            <img src="images/location.png" alt="" /><a href="#"
+              >Lagos, Nigeria</a
+            >
+          </li>
+          <li>
+            <img src="images/mail.png" alt="" /><a href="#"
+              >support@swibuy.org</a
+            >
+          </li>
+          <li>
+            <img src="images/call.png" alt="" /><a class="numbers" href="#"
+              >09012345678, 08012345678</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-text">
+      <p class="bellalink">Designed by <a href="links.html">SaraBella</a></p>
+      <p>Copyright© 2024SaraBellaCodes. All right reserved</p>
+    </div>
+  </footer>
+</html>

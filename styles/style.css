@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -190,11 +191,11 @@ section.hero .down-arrow {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: mv boli, "Carattere";
 }
 .why .why-container .text-container h1 span {
   color: #6086b5;
   margin-left: 15px;
-  font-family: "mv boli";
 }
 .why .why-container .text-container h1 span::after {
   content: "";
@@ -297,7 +298,8 @@ section.reviews .reviews-text h1 {
 section.reviews .reviews-text h1 span {
   color: #6086b5;
   margin-left: 15px;
-  font-family: mv boli;
+  font-family: mv boli, Carattere;
+  font-weight: 700;
 }
 section.reviews .reviews-text h1 span::after {
   content: "";
@@ -306,15 +308,16 @@ section.reviews .reviews-text h1 span::after {
   height: 2px;
   bottom: 15px;
   background: #6086b5;
+  background: #000;
   display: block;
 }
 section.reviews .reviews-text p {
   text-align: center;
-  font-size: 23px;
+  font-size: 25px;
 }
 section.reviews .reviews-text p span {
   color: #6086b5;
-  font-family: mv boli;
+  font-family: mv boli, "Carattere";
 }
 section.reviews .reviews-box {
   margin: 0 auto;

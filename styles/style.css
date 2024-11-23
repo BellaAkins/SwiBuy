@@ -163,14 +163,14 @@ section.hero .cta {
   color: #fff;
   padding: 10px 12px;
   border-radius: 20px;
-  width: 80px;
+  width: 150px;
   display: flex;
   justify-content: center;
 }
 section.hero .down-arrow {
   stroke: #000;
   position: absolute;
-  bottom: 7em;
+  bottom: 0;
   left: 0;
   width: 100px;
   animation: Bellamovearrow 1s alternate-reverse infinite;

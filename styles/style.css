@@ -147,6 +147,7 @@ section.hero {
 section.hero h1 {
   font-size: 3rem;
   margin-top: 2em;
+     line-height: 3.3rem;
  
 }
 section.hero .subhead {

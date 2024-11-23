@@ -147,7 +147,7 @@ section.hero {
 section.hero h1 {
   font-size: 3rem;
   margin-top: 2em;
-  line-height: 3.3rem;
+ 
 }
 section.hero .subhead {
   font-size: 1.3rem;
@@ -163,7 +163,7 @@ section.hero .cta {
   color: #fff;
   padding: 10px 12px;
   border-radius: 20px;
-  width: 100px;
+  width: 80px;
   display: flex;
   justify-content: center;
 }

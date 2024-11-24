@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=poppins:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -273,12 +273,12 @@ section.hero {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: mv boli, "Montserrat";
+        font-family: mv boli, "poppins";
 
         span {
           color: #6086b5;
           margin-left: 15px;
-          font-family: mv boli, "Montserrat";
+          font-family: mv boli, "poppins";
 
           &::after {
             content: "";
@@ -354,12 +354,12 @@ section.hero {
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: mv boli, "Montserrat";
+      font-family: mv boli, "poppins";
 
       span {
         color: #6086b5;
         margin-left: 15px;
-        font-family: mv boli, "Montserrat";
+        font-family: mv boli, "poppins";
 
         &::after {
           content: "";
@@ -395,7 +395,7 @@ section.reviews {
         color: #6086b5;
 
         margin-left: 15px;
-        font-family: mv boli, Montserrat;
+        font-family: mv boli, poppins;
 
         font-weight: 700;
 
@@ -420,7 +420,7 @@ section.reviews {
 
       span {
         color: #6086b5;
-        font-family: mv boli, "Montserrat";
+        font-family: mv boli, "poppins";
       }
     }
   }
@@ -840,7 +840,7 @@ footer {
   width: 100%;
   padding: 8px;
   border-radius: 50px;
-  background-color: orange;
+
   background: #6086b5;
   background: #dcdae7;
   border: none;
@@ -1060,6 +1060,14 @@ footer {
     margin-top: 2em;
     padding: 1em;
     gap: 1em;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
 
     .subhead {
       //   margin-top: 1em;

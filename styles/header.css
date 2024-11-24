@@ -1,0 +1,250 @@
+header {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  right: 0;
+  left: 0;
+  top: 0;
+  background: #dcdae7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  justify-content: space-around;
+}
+header svg {
+  width: 2em;
+  margin-top: -0.6em;
+  cursor: pointer;
+}
+header .logo {
+  margin: 7px 0;
+  width: 100px;
+  cursor: pointer;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  color: #6086b5;
+}
+header .logo span {
+  color: black;
+}
+header .logo img {
+  width: 20px;
+}
+header .cart-icon-box {
+  margin: 0 5px;
+  cursor: pointer;
+  display: flex;
+}
+header .cart-icon-box img {
+  width: 20px;
+  margin: 11px;
+}
+header .cart-icon-box .cart-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .cart-icon-box .cart-icon {
+  width: 20px;
+  margin-bottom: 4px;
+}
+header .cart-icon-box .profile-icon {
+  width: 20px;
+  margin-bottom: 1px;
+}
+header .cart-icon-box .cart-quantity {
+  color: rgb(240, 136, 4);
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  top: 1px;
+  left: 12px;
+  width: 26px;
+  text-align: center;
+}
+header .cart-icon-box .cart-icon-box {
+  display: none;
+}
+
+nav {
+  background: #6086b5;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  z-index: 999;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+nav ul {
+  padding: 0;
+  margin-top: 8em;
+}
+nav ul a {
+  display: block;
+  color: black;
+  padding: 0.75em 2em;
+}
+nav ul a:hover {
+  color: #fff;
+}
+nav .close {
+  float: right;
+  margin: 2.3em;
+  width: 2.5em;
+}
+
+@media only screen and (min-width: 920px) {
+  body {
+    margin: 0;
+  }
+  .menu,
+  .close {
+    display: none;
+  }
+  nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+  }
+  nav ul li {
+    display: block;
+    margin: 0 15px;
+  }
+  nav ul li a {
+    color: #000000;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: 0.1s;
+  }
+  nav ul li a:hover {
+    color: #6086b5;
+    font-size: 1rem;
+  }
+  nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #6086b5;
+    display: block;
+    transition: 0.2s linear;
+  }
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 42em;
+    animation: BellaintroLoad 2s forwards;
+    width: 35%;
+    height: 85%;
+    right: 0;
+    left: unset;
+    width: 42em;
+    z-index: -1;
+  }
+  .logo {
+    color: black;
+  }
+}
+@media only screen and (min-width: 920px) and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  /* body {
+      width: 100%;
+  }*/
+  /*.hero-img {
+      width: 75%;
+
+  }*/
+  nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: 40%;
+    height: auto;
+    background: none;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+  }
+  nav ul a {
+    color: #fff;
+    padding: 0.5em 1.5em;
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 920px) {
+  @keyframes BellaintroLoad {
+    from {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  @keyframes Bellamovearrow {
+    from {
+      transform: translateY(-30px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  @keyframes Bellamovedown {
+    from {
+      transform: translateY(-100px);
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  /* body {
+        width: 100%;
+    }*/
+  /*.hero-img {
+        width: 75%;
+
+    }*/
+  nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: 40%;
+    height: auto;
+    background: none;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+  }
+  nav ul a {
+    color: #fff;
+    padding: 0.5em 1.5em;
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=header.css.map */

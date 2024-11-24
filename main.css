@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=poppins:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +25,10 @@
 * .cta:hover {
   background: #000;
   border: none;
+  background: #dcdae7;
+  color: #000;
+  color: #6086b5;
+  border: 1px solid #6086b5;
 }
 
 body {
@@ -237,12 +241,12 @@ section.hero .down-arrow {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: mv boli, "Montserrat";
+  font-family: mv boli, "poppins";
 }
 .why .why-container .text-container h1 span {
   color: #6086b5;
   margin-left: 15px;
-  font-family: mv boli, "Montserrat";
+  font-family: mv boli, "poppins";
 }
 .why .why-container .text-container h1 span::after {
   content: "";
@@ -302,12 +306,12 @@ section.hero .down-arrow {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: mv boli, "Montserrat";
+  font-family: mv boli, "poppins";
 }
 .shopnow .shop-now-text h1 span {
   color: #6086b5;
   margin-left: 15px;
-  font-family: mv boli, "Montserrat";
+  font-family: mv boli, "poppins";
 }
 .shopnow .shop-now-text h1 span::after {
   content: "";
@@ -335,7 +339,7 @@ section.reviews .reviews-text h1 {
 section.reviews .reviews-text h1 span {
   color: #6086b5;
   margin-left: 15px;
-  font-family: mv boli, Montserrat;
+  font-family: mv boli, poppins;
   font-weight: 700;
 }
 section.reviews .reviews-text h1 span::after {
@@ -354,7 +358,7 @@ section.reviews .reviews-text p {
 }
 section.reviews .reviews-text p span {
   color: #6086b5;
-  font-family: mv boli, "Montserrat";
+  font-family: mv boli, "poppins";
 }
 section.reviews .reviews-box {
   width: 95%;
@@ -710,7 +714,6 @@ footer .footer-text .bellalink a {
   width: 100%;
   padding: 8px;
   border-radius: 50px;
-  background-color: orange;
   background: #6086b5;
   background: #dcdae7;
   border: none;
@@ -729,18 +732,26 @@ footer .footer-text .bellalink a {
   section {
     padding: 1.5em 5em;
   }
-  .hero {
+  section.hero {
+    padding: 1em;
     gap: 2em;
+  }
+  section.hero h1 {
+    font-size: 3.3rem;
+    margin-top: 2em;
+    line-height: 3.3rem;
+  }
+  section.hero .subhead {
+    font-size: 1.4rem;
   }
   .why .why-container .why-boxes {
     grid-template-columns: repeat(2, 1fr);
   }
   .about {
-    margin-top: 4em;
+    margin-top: 8em;
   }
   .about img {
     width: 500px;
-    height: 50vh;
   }
   .about .about-container {
     display: flex;
@@ -874,8 +885,7 @@ footer .footer-text .bellalink a {
   .hero-img {
     left: unset;
     right: 0;
-    width: 40%;
-    width: 42em;
+    width: 45%;
     height: 42em;
     height: 85%;
     z-index: -1;
@@ -884,18 +894,18 @@ footer .footer-text .bellalink a {
   section.hero {
     color: #6086b5;
     height: auto;
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     margin-top: 2em;
-    padding: 1em;
+    padding: 1em 2em;
     gap: 1em;
   }
   section.hero h1 {
     font-size: 3rem;
   }
   section.hero p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   section.hero .cta {
     margin-bottom: 3em;
@@ -932,22 +942,22 @@ footer .footer-text .bellalink a {
   section.reviews {
     width: 1200px;
     margin: 0 auto;
-    max-width: 1200px; /* Set the maximum width for large screens */
+    max-width: 1200px;
+    /* Set the maximum width for large screens */
     margin-top: 5em;
   }
   section.reviews .reviews-box {
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     position: relative;
     top: 13%;
     margin-top: 8em;
-    width: 100%;
+    margin: 0 auto;
   }
   section.reviews .reviews-box .reviews-profile {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin: 0 15px;
     display: flex;
@@ -956,6 +966,7 @@ footer .footer-text .bellalink a {
     position: relative;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     transition: 0.4s;
+    margin-top: 8em;
   }
   section.reviews .reviews-box .reviews-profile:hover {
     border-radius: 20px;
@@ -969,8 +980,8 @@ footer .footer-text .bellalink a {
     top: 50%;
   }
   section.reviews .reviews-box .reviews-profile img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center;
@@ -1110,4 +1121,4 @@ footer .footer-text .bellalink a {
     transform: translateY(0);
     opacity: 1;
   }
-}/*# sourceMappingURL=main.css.map */
+}

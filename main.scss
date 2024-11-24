@@ -26,6 +26,10 @@
     &:hover {
       background: #000;
       border: none;
+      background: #dcdae7;
+      color: #000;
+      color: #6086b5;
+      border: 1px solid #6086b5;
       //   color: #000;
     }
   }
@@ -448,7 +452,6 @@ section.reviews {
       position: relative;
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
       transition: 0.4s;
-      //  background: yellow;
 
       &:hover {
         border-radius: 20px;
@@ -861,7 +864,18 @@ footer {
     padding: 1.5em 5em;
   }
 
-  .hero {
+  section.hero {
+    padding: 1em;
+    h1 {
+      font-size: 3.3rem;
+      margin-top: 2em;
+      line-height: 3.3rem;
+    }
+
+    .subhead {
+      font-size: 1.4rem;
+    }
+
     gap: 2em;
   }
   .why {
@@ -873,11 +887,10 @@ footer {
   }
 
   .about {
-    margin-top: 4em;
+    margin-top: 8em;
 
     img {
       width: 500px;
-      height: 50vh;
     }
 
     .about-container {
@@ -1043,22 +1056,25 @@ footer {
   .hero-img {
     left: unset;
     right: 0;
-    width: 40%;
-    width: 42em;
+    width: 45%;
+    // width: 42em;
     height: 42em;
     height: 85%;
+
+    //   width: 100%;
     z-index: -1;
+
     animation: BellaintroLoad 2s forwards;
   }
 
   section.hero {
     color: #6086b5;
     height: auto;
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     margin-top: 2em;
-    padding: 1em;
+    padding: 1em 2em;
     gap: 1em;
 
     h1 {
@@ -1125,12 +1141,12 @@ footer {
     width: 1200px;
     margin: 0 auto;
 
-    max-width: 1200px; /* Set the maximum width for large screens */
+    max-width: 1200px;
+    /* Set the maximum width for large screens */
     margin-top: 5em;
     //  height: 90vh;
 
     .reviews-box {
-      margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       align-items: center;
@@ -1138,11 +1154,12 @@ footer {
       top: 13%;
       margin-top: 8em;
 
-      width: 100%;
+      //    width: 1400px;
+      margin: 0 auto;
 
       .reviews-profile {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
         margin: 0 15px;
         display: flex;
@@ -1151,6 +1168,7 @@ footer {
         position: relative;
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
         transition: 0.4s;
+        margin-top: 8em;
 
         &:hover {
           border-radius: 20px;
@@ -1167,8 +1185,8 @@ footer {
         }
 
         img {
-          width: 250px;
-          height: 250px;
+          width: 200px;
+          height: 200px;
           object-fit: cover;
           object-position: center;
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);

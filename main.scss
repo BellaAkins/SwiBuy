@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -192,13 +193,13 @@ section.hero {
   gap: 1em;
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 2em;
     line-height: 3.3rem;
   }
 
   .subhead {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   .down-arrow {
@@ -272,12 +273,12 @@ section.hero {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: mv boli, "Carattere";
+        font-family: mv boli, "Montserrat";
 
         span {
           color: #6086b5;
           margin-left: 15px;
-          font-family: mv boli, "Carattere";
+          font-family: mv boli, "Montserrat";
 
           &::after {
             content: "";
@@ -294,7 +295,6 @@ section.hero {
 
       p {
         font-size: 1.5rem;
-        font-family: mv boli, "Carattere";
       }
     }
     .why-boxes {
@@ -354,12 +354,12 @@ section.hero {
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: mv boli, "Carattere";
+      font-family: mv boli, "Montserrat";
 
       span {
         color: #6086b5;
         margin-left: 15px;
-        font-family: mv boli, "Carattere";
+        font-family: mv boli, "Montserrat";
 
         &::after {
           content: "";
@@ -395,7 +395,7 @@ section.reviews {
         color: #6086b5;
 
         margin-left: 15px;
-        font-family: mv boli, Carattere;
+        font-family: mv boli, Montserrat;
 
         font-weight: 700;
 
@@ -420,7 +420,7 @@ section.reviews {
 
       span {
         color: #6086b5;
-        font-family: mv boli, "Carattere";
+        font-family: mv boli, "Montserrat";
       }
     }
   }

@@ -97,14 +97,17 @@ nav .close {
   width: 2.5em;
 }
 
+/*
 @media only screen and (min-width: 920px) {
   body {
     margin: 0;
   }
+
   .menu,
   .close {
     display: none;
   }
+
   nav {
     transform: translateX(0);
     position: unset;
@@ -112,43 +115,56 @@ nav .close {
     width: auto;
     height: auto;
     background: none;
+
+    ul {
+      display: flex;
+      margin: 0;
+      justify-content: space-between;
+    }
   }
-  nav ul {
-    display: flex;
-    margin: 0;
-    justify-content: space-between;
+
+  nav {
+    ul {
+      li {
+        display: block;
+        margin: 0 15px;
+
+        a {
+          color: #000000;
+          font-weight: 500;
+          font-size: 0.9rem;
+          transition: 0.1s;
+
+          &:hover {
+            color: #6086b5;
+            font-size: 1rem;
+          }
+
+          &::after {
+            content: "";
+            width: 0;
+            height: 2px;
+
+            background: #6086b5;
+            display: block;
+            transition: 0.2s linear;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
-  nav ul li {
-    display: block;
-    margin: 0 15px;
-  }
-  nav ul li a {
-    color: #000000;
-    font-weight: 500;
-    font-size: 0.9rem;
-    transition: 0.1s;
-  }
-  nav ul li a:hover {
-    color: #6086b5;
-    font-size: 1rem;
-  }
-  nav ul li a::after {
-    content: "";
-    width: 0;
-    height: 2px;
-    background: #6086b5;
-    display: block;
-    transition: 0.2s linear;
-  }
-  nav ul li a:hover::after {
-    width: 100%;
-  }
+
   .hero-img {
     left: unset;
     right: 0;
     width: 50%;
     height: 42em;
     animation: BellaintroLoad 2s forwards;
+
     width: 35%;
     height: 85%;
     right: 0;
@@ -156,55 +172,56 @@ nav .close {
     width: 42em;
     z-index: -1;
   }
+
   .logo {
     color: black;
   }
-}
-@media only screen and (min-width: 920px) and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-  }
-  /* body {
-      width: 100%;
-  }*/
-  /*.hero-img {
-      width: 75%;
 
-  }*/
-  nav {
-    transform: translateX(0);
-    position: unset;
-    display: block;
-    width: 40%;
-    height: auto;
-    background: none;
+  @media only screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+
+
+
+
+    nav {
+      transform: translateX(0);
+      position: unset;
+      display: block;
+      width: 40%;
+      height: auto;
+      background: none;
+
+      ul {
+        display: flex;
+        margin: 0;
+
+        a {
+          color: #fff;
+          padding: 0.5em 1.5em;
+          font-size: 0.9rem;
+        }
+      }
+    }
   }
-  nav ul {
-    display: flex;
-    margin: 0;
-  }
-  nav ul a {
-    color: #fff;
-    padding: 0.5em 1.5em;
-    font-size: 0.9rem;
-  }
-}
-@media only screen and (min-width: 920px) {
+
   @keyframes BellaintroLoad {
     from {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
+
     to {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
   }
   @keyframes Bellamovearrow {
     from {
       transform: translateY(-30px);
     }
+
     to {
       transform: translateY(0);
     }
@@ -213,23 +230,22 @@ nav .close {
     from {
       transform: translateY(-100px);
     }
+
     to {
       transform: translateY(0);
       opacity: 1;
     }
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    //   margin: 0 auto;
   }
-  /* body {
-        width: 100%;
-    }*/
-  /*.hero-img {
-        width: 75%;
 
-    }*/
+
+
   nav {
     transform: translateX(0);
     position: unset;
@@ -237,14 +253,16 @@ nav .close {
     width: 40%;
     height: auto;
     background: none;
+
+    ul {
+      display: flex;
+      margin: 0;
+
+      a {
+        color: #fff;
+        padding: 0.5em 1.5em;
+        font-size: 0.9rem;
+      }
+    }
   }
-  nav ul {
-    display: flex;
-    margin: 0;
-  }
-  nav ul a {
-    color: #fff;
-    padding: 0.5em 1.5em;
-    font-size: 0.9rem;
-  }
-}/*# sourceMappingURL=header.css.map */
+}*//*# sourceMappingURL=header.css.map */

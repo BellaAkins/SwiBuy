@@ -1,5 +1,6 @@
 import { products } from "../data/products.js";
 import { formatCurrency } from "./money.js";
+import { cart, addToCart } from "../data/cart.js";
 
 //Nav Bar
 const menu = document.querySelector(".menu");
@@ -152,13 +153,13 @@ products.forEach((theProduct) => {
           </div>
 
           <button class="add-to-cart-button button-primary add-to-cart-btn"
-          data-product-id="${theProduct.id}"
+        data-product-id="${theProduct.id}"
           >Add to Cart</button>
         </div>`;
 });
 
 const productsGrid = document.querySelector(".products-grid");
-console.log(productsGrid);
+//console.log(productsGrid);
 productsGrid.innerHTML = allProductsHTML;
 
 function displayAddedMessage(productId) {
@@ -171,13 +172,27 @@ function displayAddedMessage(productId) {
   }, 2000);
 }
 
+function updateCartQuantity(productId) {
+  //TO calculate cart quantity and update on page
+  let cartQuantity = 0;
+  cart.forEach((cartItem) => {
+    cartQuantity += cartItem.quantity;
+
+    return cartQuantity;
+  });
+
+  const displayCartQuantity = document.querySelector(".cart-quantity");
+  displayCartQuantity.innerHTML = cartQuantity;
+
+  displayAddedMessage(productId);
+}
+
 const addToCartBtn = document.querySelectorAll(".add-to-cart-btn");
-console.log(addToCartBtn);
 
 addToCartBtn.forEach((cartButton) => {
   cartButton.addEventListener("click", () => {
     const productId = cartButton.dataset.productId;
-    displayAddedMessage(productId);
-    console.log("hi");
+    addToCart(productId);
+    updateCartQuantity(productId);
   });
 });

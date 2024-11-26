@@ -1135,6 +1135,14 @@ footer {
     }
   }
 
+   .shopnow {
+    .shop-now-text {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
   .products-grid {
     grid-template-columns: repeat(4, 1fr);
   }

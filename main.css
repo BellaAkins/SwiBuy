@@ -926,6 +926,10 @@ footer .footer-text .bellalink a {
   .why .why-container .first img {
     width: 20px;
   }
+
+  .shopnow .shop-now-text h1 {
+    font-size: 3rem;
+  }
   .products-grid {
     grid-template-columns: repeat(4, 1fr);
   }

@@ -113,6 +113,7 @@ deleteOrder.forEach((deleteLink) => {
       `.cart-item-container-${productId}`
     );
     cartItemContainer.remove();
+      updateCartQuantity();
   });
 });
 //To update cart quantity on the checkout header

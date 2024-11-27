@@ -1,6 +1,6 @@
 import { products } from "../data/products.js";
 import { formatCurrency } from "./money.js";
-import { cart, addToCart } from "../data/cart.js";
+import { cart, addToCart, calculateCartQuantity } from "../data/cart.js";
 
 //Nav Bar
 const menu = document.querySelector(".menu");
@@ -16,89 +16,6 @@ close.addEventListener("click", () => {
 });
 
 //Shop now
-/*
-const products = [
-  {
-    image: "images/products/men-chino-pants-beige.jpg",
-    name: "Men's Classic-fit Pleated Chino Pants",
-    rating: {
-      stars: 4.5,
-      count: 9017,
-    },
-    priceCents: 2290,
-  },
-
-  {
-    image: "images/products/men-cozy-fleece-zip-up-hoodie-red.jpg",
-    name: "Men's Full-Zip Hooded Fleece Sweatshirt",
-    rating: {
-      stars: 4.5,
-      count: 3157,
-    },
-    priceCents: 2400,
-  },
-
-  {
-    image: "images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
-    name: "Adults Plain Cotton T-Shirt - 2 Pack",
-    rating: {
-      stars: 4.5,
-      count: 56,
-    },
-    priceCents: 799,
-  },
-
-  {
-    image: "images/products/plain-hooded-fleece-sweatshirt-yellow.jpg",
-    name: "Plain Hooded Fleece Sweatshirt",
-    rating: {
-      stars: 4.5,
-      count: 317,
-    },
-    priceCents: 2400,
-  },
-
-  {
-    image: "images/products/women-chiffon-beachwear-coverup-black.jpg",
-    name: "Women's Chiffon Beachwear Cover Up - Black",
-    rating: {
-      stars: 4.5,
-      count: 235,
-    },
-    priceCents: 2070,
-  },
-
-  {
-    image: "images/products/men-slim-fit-summer-shorts-gray.jpg",
-    name: "Men's Slim-Fit Summer Shorts",
-    rating: {
-      stars: 4,
-      count: 160,
-    },
-    priceCents: 1699,
-  },
-
-  {
-    image: "images/products/women-stretch-popover-hoodie-black.jpg",
-    name: "Women's Stretch Popover Hoodie",
-    rating: {
-      stars: 4.5,
-      count: 2465,
-    },
-    priceCents: 1374,
-  },
-
-  {
-    image: "images/products/women-french-terry-fleece-jogger-camo.jpg",
-    name: "Women's Fleece Jogger Sweatpant",
-    rating: {
-      stars: 4.5,
-      count: 248,
-    },
-    priceCents: 2400,
-  },
-];
-*/
 
 let allProductsHTML = "";
 //using accumulator pattern
@@ -161,7 +78,15 @@ products.forEach((theProduct) => {
 const productsGrid = document.querySelector(".products-grid");
 //console.log(productsGrid);
 productsGrid.innerHTML = allProductsHTML;
+//Update cart quantity and display on page
+function updateCartQuantity() {
+  const cartQuantity = calculateCartQuantity();
+  const displayCartQuantity = document.querySelector(".cart-quantity");
+  displayCartQuantity.innerHTML = cartQuantity;
+}
 
+updateCartQuantity();
+//Display added message when add to cart btn is clicked
 function displayAddedMessage(productId) {
   const addedMessage = document.querySelector(`.js-added-to-cart-${productId}`);
 
@@ -172,6 +97,7 @@ function displayAddedMessage(productId) {
   }, 2000);
 }
 
+/*
 function updateCartQuantity(productId) {
   //TO calculate cart quantity and update on page
   let cartQuantity = 0;
@@ -185,10 +111,10 @@ function updateCartQuantity(productId) {
   displayCartQuantity.innerHTML = cartQuantity;
 
   displayAddedMessage(productId);
-}
+}*/
 
 const addToCartBtn = document.querySelectorAll(".add-to-cart-btn");
-
+//Add product to cart
 addToCartBtn.forEach((cartButton) => {
   cartButton.addEventListener("click", () => {
     const productId = cartButton.dataset.productId;

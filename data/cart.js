@@ -1,14 +1,24 @@
-export let cart = [
-  {
-    productId: "1",
-    quantity: 2,
-  },
+//get cart from local storage
+export let cart = JSON.parse(localStorage.getItem("cart"));
+if (!cart) {
+  cart = [
+    {
+      productId: "1",
+      quantity: 2,
+    },
 
-  {
-    productId: "2",
-    quantity: 1,
-  },
-];
+    {
+      productId: "2",
+      quantity: 3,
+    },
+  ];
+}
+/*
+ */
+
+function saveToStorage() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
 
 export function addToCart(productId) {
   //Check for matching product in cart
@@ -36,6 +46,9 @@ export function addToCart(productId) {
       quantity,
     });
   }
+
+  //save to storage
+  saveToStorage();
 }
 
 //Remove Product to cart
@@ -48,4 +61,27 @@ export function removeFromCart(productId) {
   });
 
   cart = newCart;
+
+  //save to storage
+  saveToStorage();
+}
+
+export function calculateCartQuantity() {
+  let cartQuantity = 0;
+  cart.forEach((cartItem) => {
+    cartQuantity += cartItem.quantity;
+  });
+
+  return cartQuantity;
+}
+export function updateCartNewQuantity(productId, newQuantity) {
+  let matchingItem;
+  cart.forEach((cartItem) => {
+    if (productId === cartItem.productId) {
+      matchingItem = cartItem;
+    }
+  });
+
+  matchingItem.quantity = newQuantity;
+  saveToStorage();
 }

@@ -54,6 +54,16 @@ li {
   /* Use align-items: start; to prevent the elements
      in the grid from stretching vertically. */
   align-items: start;
+
+  .order-summary {
+    h3 {
+      font-size: 1.5rem;
+      color: #6086b5;
+    }
+    img {
+      width: 250px;
+    }
+  }
 }
 
 @media (max-width: 1000px) {
@@ -232,4 +242,27 @@ li {
 
   margin-top: 11px;
   margin-bottom: 15px;
+}
+
+.quantity-input {
+  width: 30px;
+  display: none;
+}
+
+.save-quantity-link {
+  display: none;
+}
+.edit-quantity .quantity-input {
+  display: initial; // resets display property to make input appear when update link id clicked
+}
+.edit-quantity .save-quantity-link {
+  display: initial;
+}
+
+.edit-quantity .quantity-label {
+  display: none;
+}
+
+.edit-quantity .update-quantity-link {
+  display: none;
 }

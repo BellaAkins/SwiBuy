@@ -12,7 +12,7 @@ import { deliveryOptions } from "../data/delivery Options.js";
 
 export function renderOrderSummary() {
   let allCartSummaryHTML = "";
-
+  /*
   cart.forEach((cartItem) => {
     const productId = cartItem.productId;
 
@@ -86,7 +86,80 @@ export function renderOrderSummary() {
               </div>
             </div>
             `;
+  });*/
+
+  cart.forEach((cartItem) => {
+    const productId = cartItem.productId;
+
+    // Find the matching product using find() to improve efficiency
+    const matchingProduct = products.find(
+      (product) => product.id === productId
+    );
+
+    if (!matchingProduct) {
+      console.error(`Product with ID ${productId} not found`);
+      return; // Skip this iteration if the product is not found
+    }
+
+    const deliveryOptionId = cartItem.deliveryOptionId;
+
+    // Find the matching delivery option using find()
+    const deliveryOption = deliveryOptions.find(
+      (option) => option.id === deliveryOptionId
+    );
+
+    if (!deliveryOption) {
+      console.error(
+        `No delivery option found for deliveryOptionId: ${deliveryOptionId}`
+      );
+      return; // Skip this iteration if no delivery option is found
+    }
+
+    // Calculate the delivery date
+    const today = dayjs();
+    const deliveryDate = today.add(deliveryOption.deliveryDays, "days");
+    const dateString = deliveryDate.format("dddd, MMMM, D");
+
+    allCartSummaryHTML += `
+    <div class="cart-item-container-${matchingProduct.id}">
+      <div class="delivery-date">Delivery date: ${dateString}</div>
+
+      <div class="cart-item-details-grid">
+        <img class="product-image" src="${matchingProduct.image}" />
+
+        <div class="cart-item-details">
+          <div class="product-name">${matchingProduct.name}</div>
+          <div class="product-price">$${formatCurrency(
+            matchingProduct.priceCents
+          )}</div>
+          <div class="product-quantity">
+            <span>Quantity: <span class="quantity-label js-quantity-label-${
+              matchingProduct.id
+            }">${cartItem.quantity}</span></span>
+            <span class="update-quantity-link link-primary update-link" data-product-id="${
+              matchingProduct.id
+            }">Update</span>
+            <input class="quantity-input js-quantity-input-${
+              matchingProduct.id
+            }">
+            <span class="save-quantity-link link-primary" data-product-id="${
+              matchingProduct.id
+            }">Save</span>    
+            <span class="delete-quantity-link link-primary" data-product-id="${
+              matchingProduct.id
+            }">Delete</span>
+          </div>
+        </div>
+
+        <div class="delivery-options">
+          <div class="delivery-options-title">Choose a delivery option:</div>
+          ${deliveryOptionsHTML(matchingProduct, cartItem)}
+        </div>
+      </div>
+    </div>
+  `;
   });
+
   function deliveryOptionsHTML(matchingProduct, cartItem) {
     let theDeliveryOptionHTML = "";
 

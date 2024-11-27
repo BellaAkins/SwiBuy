@@ -8,8 +8,7 @@ import {
 import { products } from "../data/products.js";
 import { formatCurrency } from "./money.js";
 import dayjs from "https://unpkg.com/dayjs@1.11.10/esm/index.js";
-import { deliveryOptions } from "../data/deliveryoptions.js";
-
+import { deliveryOptions } from "../data/delivery Options.js";
 
 export function renderOrderSummary() {
   let allCartSummaryHTML = "";

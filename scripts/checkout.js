@@ -103,6 +103,12 @@ export function renderOrderSummary() {
 
     const deliveryOptionId = cartItem.deliveryOptionId;
 
+    // Ensure deliveryOptionId is valid
+    if (!deliveryOptionId) {
+      console.error(`No valid deliveryOptionId for product ${productId}`);
+      return; // Skip this iteration if no deliveryOptionId is provided
+    }
+
     // Find the matching delivery option using find()
     const deliveryOption = deliveryOptions.find(
       (option) => option.id === deliveryOptionId
@@ -110,9 +116,16 @@ export function renderOrderSummary() {
 
     if (!deliveryOption) {
       console.error(
-        `No delivery option found for deliveryOptionId: ${deliveryOptionId}`
+        `No delivery option found for deliveryOptionId: ${deliveryOptionId} in cart item ${productId}`
       );
       return; // Skip this iteration if no delivery option is found
+    }
+
+    // Validate quantity (ensure it's a positive number and within a reasonable range)
+    const quantity = cartItem.quantity;
+    if (isNaN(quantity) || quantity <= 0 || quantity >= 1000) {
+      console.error(`Invalid quantity for product ${productId}: ${quantity}`);
+      return; // Skip rendering this cart item if the quantity is invalid
     }
 
     // Calculate the delivery date

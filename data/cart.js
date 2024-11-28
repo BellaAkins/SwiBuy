@@ -101,11 +101,11 @@ export function updateDeliveryOption(productId, deliveryOptionId) {
   saveToStorage();
 }
 
-/*
+
 function clearStorage() {
   localStorage.clear();
 }
 
 clearStorage();
-*/
+
 //CHECK ON KEY AND TRY TO WRITE IT WITH FIND LIKE AI

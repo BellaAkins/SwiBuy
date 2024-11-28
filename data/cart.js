@@ -1,5 +1,5 @@
 export let cart = JSON.parse(localStorage.getItem("cart"));
-
+/*
 if (!cart) {
   cart = [
     {
@@ -14,7 +14,7 @@ if (!cart) {
       deliveryOptionId: "2",
     },
   ];
-}
+}*/
 
 function saveToStorage() {
   localStorage.setItem("cart", JSON.stringify(cart));
@@ -102,10 +102,10 @@ export function updateDeliveryOption(productId, deliveryOptionId) {
 }
 
 
-function clearStorage() {
+/*function clearStorage() {
   localStorage.clear();
 }
 
-clearStorage();
+clearStorage();*/
 
 //CHECK ON KEY AND TRY TO WRITE IT WITH FIND LIKE AI

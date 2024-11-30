@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/payment.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-container">
+        <div class="atm-card">
+          <div class="images">
+            <img src="images/chip.png" alt="chip" />
+            <img id="logo" src="images/visa.png" alt="visa" />
+          </div>
+          <div class="number-box">
+            <p id="one" class="number-box"></p>
+            <p id="two" class="number-box"></p>
+            <div id="three" class="number-box"></div>
+            <p id="four" class="number-box"></p>
+          </div>
+          <div class="cardbox">
+            <div class="box">
+              <span>card holder</span>
+              <div class="card-holder-name"></div>
+            </div>
+            <div class="box">
+              <span class="exp">expires</span>
+              <div class="expire-box">
+                <span class="exp-month"></span>
+                <span class="exp-year"></span>
+              </div>
+            </div>
+            <!--keep space`-->
+          </div>
+        </div>
+
+        <!--keep this space dont confuse me-->
+      </div>
+
+      <form action="" id="form">
+        <div class="inputbox">
+          <span>card number</span>
+
+          <div class="number">
+            <input
+              type="text"
+              minlength="4"
+              maxlength="4"
+              class="card-number-first"
+              id="first"
+              required
+            />
+            <input
+              type="text"
+              minlength="4"
+              maxlength="4"
+              class="card-number-second"
+              id="second"
+              required
+            /><input
+              type="text"
+              minlength="4"
+              maxlength="4"
+              class="card-number-third"
+              id="third"
+              required
+            />
+            <input
+              type="text"
+              minlength="4"
+              maxlength="4"
+              class="card-number-fourth"
+              id="fourth"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="inputbox">
+          <span>card holder</span>
+          <input
+            type="text"
+            class="card-holder-input"
+            maxlength="20"
+            required
+          />
+        </div>
+
+        <div class="expiration-box">
+          <span>expiration date</span>
+          <div class="title">
+            <div class="select-inputbox">
+              <select name="" id="month" class="month-input" required>
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <select name="" id="year" class="year-input" required>
+                <option value=""></option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+              </select>
+            </div>
+            <div class="ccv-inputbox">
+              <span>ccv</span>
+              <input
+                type="text"
+                minlength="3"
+                maxlength="4"
+                class="ccv-input"
+                id="ccvBox"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="submit" class="submit-btn" />
+      </form>
+      <p id="message">Your Payment was successful</p>
+    </div>
+    <script src="scripts/payment.js"></script>
+  </body>
+</html>
+<!--<button class="place-order-button button-primary" onclick="window.location.href'>Place your order</button> -->

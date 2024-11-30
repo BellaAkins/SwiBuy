@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/form.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="images/cart-check-svgrepo-com (1).svg" alt="" /> Swi<span
+          >Buy</span
+        ></a
+      >
+      <button id="sign-out-btn" class="sign-out-btn">Sign Out</button>
+    </header>
+
+    <h1>Sign in</h1>
+
+    <form id="registration-form">
+      <fieldset>
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" required />
+      </fieldset>
+
+      <button type="submit" id="submit-btn">Submit</button>
+    </form>
+    <p>
+      Don't have an account,
+      <a class="signup" href="paymentform.html">Sign up</a>
+    </p>
+    <div id="sign-out-modal" class="modal">
+      <div class="modal-content">
+        <p>
+          Are you sure you want to sign out? <br />Your current session data
+          will be erased if you sign out
+        </p>
+        <button id="confirm-sign-out" class="modal-btn">Yes</button>
+        <button id="cancel-sign-out" class="modal-btn">No</button>
+      </div>
+    </div>
+
+    <script type="module" src="scripts/paymentsignin.js"></script>
+  </body>
+</html>

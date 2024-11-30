@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/form.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="images/cart-check-svgrepo-com (1).svg" alt="" /> Swi<span
+          >Buy</span
+        ></a
+      >
+      <button id="sign-out-btn" class="sign-out-btn">Sign Out</button>
+    </header>
+    <h1>
+      Welcome to <img src="images/cart-check-svgrepo-com (1).svg" alt="" /><span
+        >Swi</span
+      >Buy
+    </h1>
+    <h1>Sign up</h1>
+    <p>Please fill out this form with the required information</p>
+    <form id="registration-form">
+      <fieldset>
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" required />
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" required />
+      </fieldset>
+
+      <div id="password-error" style="color: red; display: none">
+        Password must be at least 6 characters long
+      </div>
+
+      <button type="submit" id="submit-btn" disabled>Submit</button>
+    </form>
+
+    <p>
+      Already have an account?
+      <a class="signup" href="signin.html">Login Here</a>
+    </p>
+
+    <!-- Sign-Out Confirmation Modal -->
+    <div id="sign-out-modal" class="modal">
+      <div class="modal-content">
+        <p>
+          Are you sure you want to sign out? <br />Your current session data
+          will be erased if you sign out
+        </p>
+        <button id="confirm-sign-out" class="modal-btn">Yes</button>
+        <button id="cancel-sign-out" class="modal-btn">No</button>
+      </div>
+    </div>
+
+    <script type="module" src="scripts/paymentform.js"></script>
+  </body>
+</html>

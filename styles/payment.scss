@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "inter";
+  //background-color: yellow;
+  text-transform: uppercase;
+
+  img {
+    width: 60px;
+  }
+}
+
+.container {
+  background: #dcdae7;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-bottom: 60px;
+
+  p {
+    display: none;
+  }
+
+  .card-container {
+    //background: blue;
+    position: relative;
+    height: 300px;
+    width: 400px;
+    margin-bottom: -100px;
+
+    .atm-card {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(30deg, black, deeppink);
+      background: #020202;
+      border-radius: 15px;
+      padding: 20px;
+
+      .images {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        img {
+          height: 50px;
+        }
+      }
+
+      .number-box {
+        padding: 30px 0;
+        font-size: 20px;
+        color: #ffff;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .cardbox {
+        display: flex;
+        //gap: 4em;
+
+        .box {
+          margin-bottom: 4em;
+          color: #ffffff;
+          font-size: 15px;
+          &:nth-child(1) {
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  }
+
+  form {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    //size of form//
+    width: 600px;
+    padding-top: 160px;
+
+    .inputbox {
+      margin-top: 20px;
+
+      .number {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      span {
+        display: block;
+        color: #020202;
+        padding-bottom: 5px;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        color: #020202;
+        border-radius: 10px;
+      }
+    }
+
+    .expiration-box {
+      //display: flex;
+      //gap: 15px;
+      margin-top: 20px;
+      .title {
+        display: flex;
+        gap: 20em;
+
+        .select-inputbox {
+          display: flex;
+          gap: 15px;
+
+          select {
+            padding: 10px;
+            border-radius: 10px;
+          }
+        }
+
+        .ccv-inputbox {
+          span {
+            display: block;
+          }
+
+          input {
+            width: 100%;
+            padding: 0.5em;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    .submit-btn {
+      width: 100%;
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      background: #dcdae7;
+      color: #020202;
+      font-size: 20px;
+      cursor: pointer;
+
+      &:hover {
+        letter-spacing: 2px;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    p {
+      display: none;
+    }
+
+    .card-container {
+      //background: blue;
+      position: relative;
+      height: 300px;
+      width: 350px;
+      margin-bottom: -100px;
+    }
+
+    form {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      //size of form//
+      width: 400px;
+      padding-top: 160px;
+
+      .inputbox {
+        margin-top: 20px;
+
+        span {
+          display: block;
+          color: #020202;
+          padding-bottom: 5px;
+        }
+
+        input,
+        select {
+          width: 100%;
+          padding: 10px;
+          color: #020202;
+        }
+
+        select {
+          display: flex;
+          justify-content: space-between;
+          gap: 15em;
+        }
+      }
+
+      .expiration-box {
+        //display: flex;
+        //gap: 15px;
+        .title {
+          display: flex;
+          gap: 9em;
+
+          .select-inputbox {
+            display: flex;
+            gap: 15px;
+          }
+
+          .cvv-inputbox {
+            span {
+              display: block;
+            }
+
+            input {
+              width: 60%;
+            }
+          }
+        }
+
+        .inputbox {
+          display: flex;
+          //flex: 1 1 0.3;
+        }
+      }
+
+      .submit-btn {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+        &:hover {
+          letter-spacing: 3px;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

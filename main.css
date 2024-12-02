@@ -1229,6 +1229,7 @@ footer .footer-text .bellalink a {
   section.team .team-box .team-profile .team-info .name {
     color: #6086b5;
     margin-bottom: 15px;
+    font-size: 1rem;
   }
   section.team .team-box .team-profile .team-info .bio {
     width: 100%;

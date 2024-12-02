@@ -1109,7 +1109,9 @@ footer .footer-text .bellalink a {
     transition: 0.4s;
   }
   section.reviews .reviews-box .reviews-profile .reviews-info .name {
+   color: #6086b5;
     margin-bottom: 15px;
+    font-size: 1rem;
   }
   section.reviews .reviews-box .reviews-profile .reviews-info .bio {
     width: 100%;

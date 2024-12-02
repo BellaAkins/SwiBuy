@@ -1115,6 +1115,7 @@ footer .footer-text .bellalink a {
   }
   section.reviews .reviews-box .reviews-profile .reviews-info .bio {
     width: 100%;
+    font-size: 1.1rem;
     text-align: center;
     margin-right: auto;
     margin-left: auto;

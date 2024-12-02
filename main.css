@@ -1243,6 +1243,11 @@ footer .footer-text .bellalink a {
   section.team .team-box .team-profile .team-info .team-icon i:hover {
     color: #6086b5;
   }
+
+    section.newsletter {
+    color: #6086b5;
+    margin-top: 6em;
+  }
 }
 @keyframes BellaintroLoad {
   from {
